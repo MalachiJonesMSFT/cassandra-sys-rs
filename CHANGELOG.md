@@ -6,14 +6,15 @@ This file's format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.2.0] - 2024-10-28
 ### Added
+- Upgrade from version `2.16.0` to `2.17.1` of the C++ driver, to bring in full support for the `cass_ssl_set_min_protocol_version` function introduced in version `1.1.0`.
 
-### Changed
-
-### Fixed
+### Deprecated
+- The `early_access_min_tls_version` feature flag no longer does anything, and will be removed in the next major version bump.
 
 ## [1.1.1] - 2024-06-18
-
 ### Changed
 - Update repo location from
   [Metaswitch/cassandra-sys-rs](https://github.com/Metaswitch/cassandra-sys-rs) to
@@ -34,6 +35,7 @@ API for using secure connection bundles. See that project's
 This is the minimum supported version of the C++ driver.
 
 * Move GitHub build to GitHub Actions (was previously Travis).
+
 ## [0.12.3] - 2021-04-30
 ### Fixed
 * Remove assumption that char is signed. Allows building on M1.
@@ -44,8 +46,6 @@ This is the minimum supported version of the C++ driver.
 
 ### Changed
 * Bumped dependencies on `log` and `env_logger`.
-
-### Fixed
 
 ## [0.12.1] - 2020-01-29
 ### Fixed
@@ -89,7 +89,8 @@ released versions.
 ### Changed
 - (Pre-fork version.)
 
-[Unreleased]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/cassandra-rs/cassandra-sys-rs/compare/0.12.3...1.0.0

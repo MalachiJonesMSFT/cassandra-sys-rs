@@ -11,7 +11,7 @@ sudo apt-get install -y libuv1 libuv1-dev cmake g++ libssl-dev zlib1g-dev
 
 # Set VERSION to one of the tags here: https://github.com/datastax/cpp-driver/tags
 # This is the version of the cpp driver that will be installed and therefore tested against
-VERSION=2.16.2
+VERSION=2.17.1
 
 PACKAGE_NAME="cassandra-cpp-driver_${VERSION}-1_amd64"
 FILE_PATH="packages/${PACKAGE_NAME}.deb"
